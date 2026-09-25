@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | MCU E-Library</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="images/mcu-logo.jpeg" alt="MCU Logo">
+            <span>MCU</span> E-Library
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="library.html">Browse Library</a>
+            <a href="dashboard.html">My Library</a>
+            <a href="resource.html">Resource</a>
+        </nav>
+
+        <a href="signin.html" class="login-btn">
+            Sign Out
+        </a>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+    <main class="dashboard">
+
+        <!-- WELCOME -->
+        <section class="dashboard-welcome">
+
+            <div>
+                <p class="dashboard-label">
+                    STUDENT DASHBOARD
+                </p>
+
+                <h1 id="welcomeHeading">
+                 Welcome back, Student
+                </h1>
+
+                <p>
+                    Manage your MCU E-Library account,
+                    explore resources, and keep track of
+                    your learning materials.
+                </p>
+            </div>
+
+            <a href="library.html" class="dashboard-browse-btn">
+                Browse Library
+            </a>
+
+        </section>
+
+
+        <!-- ACCOUNT OVERVIEW -->
+        <section class="dashboard-section">
+
+            <h2>
+                Account Overview
+            </h2>
+
+            <div class="dashboard-cards">
+
+                <!-- SUBSCRIPTION -->
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        ★
+                    </div>
+
+                    <div>
+                        <p class="card-title">
+                            Subscription
+                        </p>
+
+                        <h3 class="status-inactive" id="subStatus">
+                            Not Active
+                        </h3>
+
+                        <p id="subMessage">
+                            Subscribe to access premium
+                            medical resources.
+                        </p>
+                    </div>
+
+                    <a href="subscription.html"
+                       class="card-action" id="subAction">
+                       Subscribe ₦2,500/month
+                    
+                    </a>
+
+                </div>
+
+
+                <!-- BOOKMARKS -->
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        🔖
+                    </div>
+
+                    <div>
+                        <p class="card-title">
+                            Bookmarks
+                        </p>
+
+                        <h3>
+                            0
+                        </h3>
+
+                        <p>
+                            Resources saved for later.
+                        </p>
+                    </div>
+
+                    <a href="#"
+                       class="card-action">
+                        View Bookmarks
+                    </a>
+
+                </div>
+
+
+                <!-- RECENTLY VIEWED -->
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        ◷
+                    </div>
+
+                    <div>
+                        <p class="card-title">
+                            Recently Viewed
+                        </p>
+
+                        <h3>
+                            0
+                        </h3>
+
+                        <p>
+                            Your recently viewed resources.
+                        </p>
+                    </div>
+
+                    <a href="library.html"
+                       class="card-action">
+                        Browse Resources
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK ACCESS -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="dashboard-label">
+                        EXPLORE
+                    </p>
+
+                    <h2>
+                        Quick Access
+                    </h2>
+                </div>
+
+                <a href="library.html">
+                    View All Resources →
+                </a>
+
+            </div>
+
+
+            <div class="quick-access-grid">
+
+                <a href="library.html" class="quick-access-card">
+
+                    <span>
+                        🩺
+                    </span>
+
+                    <h3>
+                        Medical Resources
+                    </h3>
+
+                    <p>
+                        Explore textbooks, lecture notes,
+                        guidelines and reference materials.
+                    </p>
+
+                </a>
+
+
+                <a href="library.html" class="quick-access-card">
+
+                    <span>
+                        🧠
+                    </span>
+
+                    <h3>
+                        Anatomy
+                    </h3>
+
+                    <p>
+                        Find anatomy resources for your
+                        studies and revision.
+                    </p>
+
+                </a>
+
+
+                <a href="library.html" class="quick-access-card">
+
+                    <span>
+                        🧬
+                    </span>
+
+                    <h3>
+                        Physiology
+                    </h3>
+
+                    <p>
+                        Explore physiology learning
+                        materials and references.
+                    </p>
+
+                </a>
+
+
+                <a href="library.html" class="quick-access-card">
+
+                    <span>
+                        💊
+                    </span>
+
+                    <h3>
+                        Pharmacology
+                    </h3>
+
+                    <p>
+                        Access pharmacology resources
+                        available in the library.
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACCOUNT INFORMATION -->
+        <section class="dashboard-section">
+
+            <h2>
+                Account Information
+            </h2>
+
+            <div class="account-info">
+
+                <div>
+
+                    <span>
+                        Full Name
+                    </span>
+
+                    <strong id="infoFullname">Student Name</strong>
+                        
+                    
+                </div>
+
+
+                <div>
+                    <span>
+                        Email
+                    </span>
+
+                    <strong id="infoEmail">student@example.com</strong>
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Institution
+                    </span>
+
+                    <strong id="infoInstitution">Your Institution</strong>
+
+                
+                </div>
+
+
+                <div>
+                    <span>
+                        programme
+                    </span>
+
+                    <strong id="infoProgramme"> Your Programme</strong>
+                        
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            MCU E-Library
+        </div>
+
+        <p>
+            Empowering the next generation of medical
+            professionals through accessible knowledge.
+        </p>
+
+        <p class="copyright">
+            © 2026 Medical Compass University.
+            All rights reserved.
+        </p>
+
+    </footer>
+<a href="signinin.html" class="login-btn" id="sign0utBtn">Sign 0ut</a>
+<script src="dashboard.js"></script>
+<script src="subscription-check.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resource | MCU E-Library</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="images/mcu-logo.png" alt="MCU Logo">
+            <span>MCU</span> E-Library
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="library.html">Browse Library</a>
+            <a href="dashboard.html">My Library</a>
+            <a href="subscription.html">Subscription</a>
+        </nav>
+
+        <a href="dashboard.html" class="login-btn">
+            My Account
+        </a>
+
+    </header>
+
+
+    <main class="resource-page">
+
+    <div class="resource-breadcrumb">
+        <a href="library.html">Browse Library</a>
+        <span>→</span>
+        <span>Resource Details</span>
+    </div>
+
+    <section class="resource-hero">
+
+        <div class="resource-cover">
+            <div class="resource-cover-icon">📖</div>
+            <p>MCU E-LIBRARY</p>
+        </div>
+
+        <div class="resource-information">
+
+            <span class="resource-type" id="resTag">SLIDE</span>
+            <h1 id="resource-title">Loading...</h1>
+            <p class="resource-author" id="resAuthor"></p>
+            <p class="resource-description" id="resDescription"></p>
+
+            <div class="resource-meta">
+                <div>
+                    <span>Department</span>
+                    <strong id="metaDepartment"></strong>
+                </div>
+                <div>
+                    <span>Resource Type</span>
+                    <strong id="metaType"></strong>
+                </div>
+                <div>
+                    <span>Year</span>
+                    <strong id="metaYear"></strong>
+                </div>
+            </div>
+
+            <!-- LOCKED STATE -->
+            <div class="resource-access" id="lockedAccess">
+                <div>
+                    <strong>Premium Resource</strong>
+                    <p>An active MCU E-Library subscription is required to access this resource.</p>
+                </div>
+                <a href="subscription.html" class="resource-button">Subscribe to Access</a>
+            </div>
+
+            <!-- UNLOCKED STATE -->
+            <div class="resource-access" id="unlockedAccess" style="display:none;">
+                <div>
+                    <strong>You have access</strong>
+                    <p>Your subscription is active. Open this resource below.</p>
+                </div>
+                <a href="#" id="readResourceBtn" class="resource-button">Read Resource</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="resource-content">
+
+        <div class="resource-main">
+            <h2>About This Resource</h2>
+            <p>This resource is part of the MCU E-Library collection and is intended to support students during their medical and health-science studies.</p>
+            <p>Students with an active subscription will be able to access available digital resources through their MCU E-Library account.</p>
+
+            <h2>What You'll Find</h2>
+            <ul>
+                <li>Comprehensive medical learning materials</li>
+                <li>Organized academic resources</li>
+                <li>Reference materials for revision</li>
+                <li>Clinically relevant educational content</li>
+            </ul>
+        </div>
+
+        <aside class="resource-sidebar">
+            <h3>Resource Information</h3>
+            <div class="sidebar-item"><span>Access</span><strong>Premium</strong></div>
+            <div class="sidebar-item"><span>Format</span><strong>Digital</strong></div>
+            <div class="sidebar-item"><span>Department</span><strong id="sidebarDepartment"></strong></div>
+            <div class="sidebar-item"><span>Added</span><strong id="sidebarYear"></strong></div>
+            <a href="subscription.html" class="sidebar-button" id="sidebarBtn">Get Access</a>
+        </aside>
+
+    </section>
+
+</main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            MCU E-Library
+        </div>
+
+        <p>
+            Empowering the next generation of medical
+            professionals through accessible knowledge.
+        </p>
+
+        <p class="copyright">
+            © 2026 Medical Compass University.
+            All rights reserved.
+        </p>
+
+    </footer>
+<script src="subscription-check.js"></script>
+<script src="resource-data.js"></script>
+<script src="resource.js"></script>
+</body>
+</html>

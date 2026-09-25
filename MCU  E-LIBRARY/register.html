@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | MCU E-Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="images/mcu-logo.png" alt="MCU Logo">
+            <span>MCU</span> E-Library
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="library.html">Browse Library</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="#">About</a>
+        </nav>
+
+        <a href="signin.html" class="login-btn">
+            Student Sign In
+        </a>
+
+    </header>
+
+
+    <!-- REGISTER SECTION -->
+    <main class="auth-page">
+
+        <div class="auth-card">
+
+            <div class="auth-logo">
+                <img src="images/mcu-logo.png"
+                     alt="Medical Compass University Logo">
+            </div>
+
+            <p class="auth-label">
+                MCU E-LIBRARY
+            </p>
+
+            <h1>Create Account</h1>
+
+            <p class="auth-description">
+                Create your student account to access your
+                library, bookmarks, and premium resources.
+            </p>
+
+
+            <form id="registerForm">
+
+                <!-- FULL NAME -->
+                <div class="form-group">
+
+                    <label for="fullname">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- INSTITUTION -->
+                <div class="form-group">
+
+                    <label for="institution">
+                        Institution
+                    </label>
+
+                    <input
+                        type="text"
+                        id="institution"
+                        placeholder="e.g. Ambrose Alli University"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PROGRAMME -->
+                <div class="form-group">
+
+                    <label for="programme">
+                        Programme
+                    </label>
+
+                    <select id="programme" required>
+
+                        <option value="">
+                            Select your programme
+                        </option>
+
+                        <option value="medicine">
+                            Medicine and Surgery
+                        </option>
+
+                        <option value="nursing">
+                            Nursing
+                        </option>
+
+                        <option value="anatomy">
+                            Human Anatomy
+                        </option>
+
+                        <option value="physiology">
+                            Human Physiology
+                        </option>
+
+                        <option value="pharmacy">
+                            Pharmacy
+                        </option>
+
+                        <option value="medical-laboratory">
+                            Medical Laboratory Science
+                        </option>
+
+                        <option value="dentistry">
+                            Dentistry
+                        </option>
+
+                        <option value="public-health">
+                            Public Health
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        minlength="8"
+                        required
+                    >
+
+                    <small class="password-hint">
+                        Password must be at least 8 characters.
+                    </small>
+
+                </div>
+
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="form-group">
+
+                    <label for="confirm-password">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        placeholder="Confirm your password"
+                        minlength="8"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- TERMS -->
+                <div class="remember">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required
+                    >
+
+                    <label for="terms">
+                        I agree to the MCU E-Library
+                        <a href="#">Terms of Use</a>
+                        and
+                        <a href="#">Privacy Policy</a>.
+                    </label>
+
+                </div>
+
+                <p id="registerError" style="color: #DC2626; font-size:14px; display:none;"></p>
+                <!-- CREATE ACCOUNT -->
+                <button
+                    type="submit"
+                    class="signin-button">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <!-- SIGN IN -->
+            <div class="auth-divider">
+                <span>
+                    Already have an account?
+                </span>
+            </div>
+
+            <a
+                href="signin.html"
+                class="create-account">
+                Sign In
+            </a>
+
+
+            <p class="auth-footer-text">
+                Your account will allow you to manage your
+                library access, bookmarks, and subscription.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            MCU E-Library
+        </div>
+
+        <p>
+            Empowering the next generation of medical
+            professionals through accessible knowledge.
+        </p>
+
+        <p class="copyright">
+            © 2026 Medical Compass University.
+            All rights reserved.
+        </p>
+
+    </footer>
+<script src="subscription-check.js"></script>
+<script src="register.js"></script>
+</body>
+</html>

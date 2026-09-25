@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Library / MCU E-Library</title>
+
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    
+    <!--NAVIGATION-->
+    <header class="navbar">
+
+    <div class="logo">
+        <span>MCU</span>E-library
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="library.html?category=all">Browse Library</a>
+        <a href="subscription.html">Subscription</a>
+        <a href="contact.html">Contacts</a>
+        <a href="about.html">About</a>
+    </nav>
+    <a href="signout.html" class="login-btn">Sign Out</a>
+    <button class="login-btn">Student Sign In</button>
+
+    </header>
+
+    <!--PAGE HEADER-->
+    <section class="library-header">
+
+        <span class="eyebrow">MCU DIGITAL COLLECTION</span>
+        <h1>Browse the Library</h1>
+
+        <p> Explore textbooks, lecture slides, journals, clincal guidelines and other resources for your medical education</p>
+    
+        </section>
+
+
+        <!--SEARCH-->
+        <section class="library-search">
+
+     <input
+     type="text"
+     placeholder="Search by title, author, subject, keyword..."
+        >
+        
+        <button>Search</button>
+
+        </section>
+
+
+        <!--LIBRARY CONTENT-->
+        <main class="library-container">
+
+
+    <!--FILTERS-->
+    <aside class="filters">
+
+        <h2>Filter Resources</h2>
+
+        <label>course</label>
+
+        <select>
+            <option>All Departments</option>
+            <option>Gross Anatomy, Neuroanatomy & Histology</option>
+            <option>Physiology</option>
+            <option>Pharmacology</option>
+            <option>Biochmeistry</option>
+            <option>Pathology</option>
+            <option>Medical-Surgical Nursing</option>
+            <option>Microbiology</option>
+            <option>Medicine</option>
+            <option>Public Health</option>
+            <option>Nursing</option>
+
+        </select>
+
+<label>Resources Type</label>
+
+<select>
+    <option>All Types</option>
+    <option>Textbook</option>
+    <option>Lecture Slide</option>
+    <option>Journal Article</option>
+    <option>clinical Guideline</option>
+    <option>Research Paper</option>
+    <option>Medical Diagram</option>
+    <option>Past Question</option>
+    <option>Case Study</option>
+    <option>Study Guide</option>
+</select>
+
+<label>Access</label>
+
+<select>
+    <option>Premium</option>
+</select>
+
+<label>Year</label>
+
+<select>
+    <option>2026</option>
+</select>
+
+<button class="clear-btn">
+    Clear Filters
+</button>
+
+<main class="library-container">
+    <!-- LEFT COLUMN: Filters Sidebar -->
+    <aside class="filters">
+        <h3>Categories</h3>
+        <div class="filter-list">
+            <button class="filter-btn active" data-category="all">All Resources</button>
+            <button class="filter-btn" data-category="anatomy">Anatomy</button>
+            <button class="filter-btn" data-category="physiology">Physiology</button>
+            <button class="filter-btn" data-category="medicine">Medicine</button>
+            <button class="filter-btn" data-category="microbiology">Microbiology</button>
+            <button class="filter-btn" data-category="pharmacology">Pharmacology</button>
+            <button class="filter-btn" data-category="biochemistry">Biochemistry</button>
+            <button class="filter-btn" data-category="medsurg">Med-Surg / Nursing</button>
+        </div>
+    </aside>
+
+    <!-- RIGHT COLUMN: Search Bar & Resource Grid -->
+    <section class="library-results">
+        <div class="results-top">
+            <input type="text" id="searchInput" class="search-box-input" placeholder="Search resources by keyword...">
+            
+            <p class="resource-count">Showing <strong id="resourceCount">0</strong> resources</p>
+
+            <select class="sort-select" id="sortSelect">
+                <option value="recent">Recently Added</option>
+                <option value="az">Title A-Z</option>
+                <option value="za">Title Z-A</option>
+            </select>
+        </div>
+
+        <!-- Dynamic Grid Container (Keep EMPTY - JavaScript populates this) -->
+        <div class="resource-grid" id="resourceGrid"></div>
+    </section>
+</main>
+
+<!--FOOTER-->
+
+<footer>
+    <div class="footer-logo">
+        MCU E-Library
+    </div>
+
+    <p>
+        Empowering the next generation of medical professionals through accesible knowledge.
+    </p>
+
+    <p class="copyright">
+        &copy; 2026 Medical Compass University. All rights reserved.
+    </p>
+
+</footer>
+<script src="subscription-check.js"></script>
+<script src="resource-data.js"></script>
+<script src="library.js"></script>
+</body>
+</html>

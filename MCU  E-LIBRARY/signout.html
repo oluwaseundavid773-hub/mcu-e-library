@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signing Out...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .logout-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 400px;
+        }
+        .logout-card h2 {
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        .logout-card p {
+            color: #718096;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logout-card">
+        <h2>Signing Out...</h2>
+        <p>You have been successfully logged out. Redirecting to login...</p>
+    </div>
+
+    <script>
+        // Clear stored login session/tokens
+        localStorage.clear();
+        sessionStorage.clear();
+
+        // Redirect to login page after 1.5 seconds
+        setTimeout(() => {
+            window.location.href = "signin.html";
+        }, 1500);
+    </script>
+
+</body>
+</html>
